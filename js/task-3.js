@@ -3,14 +3,15 @@ const blockedWord = "sale";
 
 function checkForSpam(message) {
   const modefizedMessage = message.toLowerCase();
-  if (
-    modefizedMessage.includes(forbidenWord) ||
-    modefizedMessage.includes(blockedWord)
-  ) {
-    return "true";
-  } else {
-    return "false";
-  }
+return modefizedMessage.includes(forbidenWord) || modefizedMessage.includes(blockedWord) ? Boolean(true) : Boolean (false);
+//   if (
+//     modefizedMessage.includes(forbidenWord) ||
+//     modefizedMessage.includes(blockedWord)
+//   ) {
+//     return Boolean(true);
+//   } else {
+//     return Boolean(false);
+//   }
 }
 
 console.log(checkForSpam("Latest technology news"));
